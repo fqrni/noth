@@ -1,0 +1,189 @@
+@font-face {
+  font-family: shefrah;
+  src: url(FFYaseer-Regular.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent !important
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  font-family: shefrah;
+
+}
+
+button:focus {
+  outline: 0 !important;
+  box-shadow: none !important
+}
+
+/*
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tasks{
+    color: blue;
+display: flex;
+align-items: center;} */
+
+body {
+  direction: rtl;
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.form {
+  flex-wrap: wrap;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex: 1;
+  padding: 1.3rem;
+  font-family: shefrah;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+
+}
+
+.input:focus {
+  outline: none;
+}
+
+.add {
+  border: none;
+  background-color: #4f4d4d;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 1.275rem;
+  font-size: 1.5rem;
+  font-family: shefrah;
+
+}
+
+.tasks {
+
+  background-color: #ccc9c90e;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 4rem;
+  font-family: shefrah;
+  font-size: 1.5rem;
+  color: #4f4d4d;
+}
+
+.tasks .task {
+  background-color: rgba(255, 255, 255, 0.849);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: all 0.6s ease-out;
+
+}
+
+.tasks .task:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.tasks .task:hover {
+  background-color: #f7f7f7;
+}
+
+.tasks .task.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.tasks .task span {
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #4f4d4d;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.head {
+  max-width: 80vw;
+  justify-content: space-around;
+  display: flex;
+  padding: 2rem;
+  margin: 1rem auto;
+  background-color: #8194bc0a;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.089);
+}
+
+.head a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  color: #4f4d4d;
+  margin: 0 20px;
+  font-size: 4rem;
+  text-decoration: none;
+  font-family: shefrah;
+}
+
+.logo h1,
+a {
+  display: flex;
+  text-align: center;
+  margin: 0.5rem auto;
+  justify-content: center;
+  color: #4f4d4d;
+  font-size: 5rem;
+  text-shadow: #4f4d4d 1px 1px;
+  font-family: shefrah;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .add {
+    margin: 1rem auto;
+  }
+}
